@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validacion por numero</title>
+	<script type="text/javascript">
+	function verificarValor(){
+
+			var dato=document.formulario.valor.value;
+			if(isNaN(dato)){
+
+				alert('debe ingresar un valor numérico');
+				return false;
+			}
+			else{
+				alert('el valor es numérico');
+				return false;
+			} 
+
+
+	}
+</script>
+</head>
+<body>
+<form name="formulario">
+	<label>Ingrese valor</label>
+<input type="text" name="valor">
+<button onclick="verificarValor();">Verificar</button>
+</form>
+</body>
+</html>

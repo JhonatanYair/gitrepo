@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoja de vida Boostrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+<style type="text/css">
+	
+.borde{
+	background-color: gray;
+	height:500px;
+}
+.borde1{
+background-color: red;
+}
+.borde2{
+	background-color: olivedrab;
+}
+.borde3{
+background-color: blue;
+}
+
+</style>
+
+</head>
+<body>
+<!-- EMPIEZA EL CONTENIDO -->
+
+<div class="container borde3 ">
+ <div class="row " >
+
+  <div class="col">
+<div>
+
+<div id="acordion">
+	<div class="card">
+	
+<div id="uno" class="collapse show" >
+	<div class="card-body">
+		<h3 class="text-center display-6">Datos personales</h3>
+	<center>
+		<img src="img/perfil.jpg" class="col-4">
+		<br>
+		<br>
+<form action="proceso.php" method="POST">
+
+	<label for="nombre">Nombre</label><input type="text" id="nombre" class="control">
+	<br>
+	<br>
+	<label for="apellido">Apellido</label><input type="text" id="apellido" class="control">
+	<br>
+	<br>
+	<label for="email">Email</label><input type="text" id="email" class="control" >
+	<br>
+	<br>
+	<label for="celular">Celular</label><input type="text" id="celular" class="control">
+	<br>
+	<br>
+	<label for="edad">Edad</label><input type="text" id="edad" class="control">
+	<br>
+	
+	<br>
+	<label class="radio-inline"><input type="radio" name="sexo">Mujer</label>
+	<label class="radio-inline"><input type="radio" name="sexo">Hombre</label>
+	<br>
+	<br>
+</form>
+</center>
+	</div>
+</div>
+ <center>
+ 	<table border="1">
+		<tr>
+			<th align="left">Años cursados</th>
+			<th align="left">Año de finalizacion</th>
+			<th align="left">Titulo obtenido</th>
+			<th align="left">Institucion</th>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>2011</td>
+			<td>Primaria</td>
+			<td>Gerardo Paredes</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>2017</td>
+			<td>Bachiller</td>
+			<td>Virginia guiterrez de pineda</td>
+		</tr>
+		<tfoot><b>Estudios basicos</b></tfoot>
+	</table>
+</center>
+<center>
+	<br>
+	<br>
+	<table border="1">
+		<tr>
+			<th align="left" width="25px">Curso realizado</th>
+			<th align="left" width="10px">Institucion</th>
+			<th align="left" width="30px">Duracion(Semestres)</th>
+		</tr>
+		<tr>
+			<td>Si dios y ojala lo quiera, sere tecnologo</td>
+			<td>En el SENA sociedad</td>
+			<td>Estoy en 2 semestre</td>
+		</tr>
+		<tfoot><b>Cursos realizados</b></tfoot>
+	</table>
+	<br>
+	<br>
+<table border="1">
+	<tr>
+	<th align="left">Nombre</th>
+	<th align="left">Profesion</th>
+	<th align="left">Direccion</th>
+	<th align="left">Celular</th>
+</tr>
+<tr>
+	<td>Diego Armando Maradona</td>
+	<td>Futbolista retirado</td>
+	<td>Vive en Argentina</td>
+	<td>30000000</td>
+</tr>
+<tr>
+	<td>La glora de lucho</td>
+	<td>embolador de sapatos y luego concejal</td>
+	<td>es vecino del vocero</td>
+	<td>666</td>
+	<tfoot><b>Referencia personal</b></tfoot>
+</tr>
+</table>
+	<br>
+	<br>
+<table border="1">
+	<tr>
+	<th align="left">Nombre</th>
+	<th align="left">Profesion</th>
+	<th align="left">Direccion</th>
+	<th align="left">Celular</th>
+</tr>
+<tr>
+	<td>Mariela Duarte Cardenas</td>
+	<td>Ama de casa</td>
+	<td>En el barrio el rincon</td>
+	<td>554471444</td>
+</tr>
+<tr>
+	<td>Odaimen Peinado Paez</td>
+	<td>tecnico en telecomunicaciones</td>
+	<td>No se salio por unos cigarrillos</td>
+	<td>?????????</td>
+	<tfoot><b>Referencias familiares</b></tfoot>
+</tr>
+</table>
+<br>
+<br>
+<input type="submit" value="GUARDAR" class="btn btn-danger">
+</center>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

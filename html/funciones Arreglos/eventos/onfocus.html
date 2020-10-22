@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="select" onfocus="green(this)">
+  <option value=1>1</option>
+  <option value=2>2</option>
+  <option value=3>3</option>
+  <option value=4>4</option>
+</select>
+
+<input type="" id="input" onfocus="yellow(this)">
+
+<button value="HOLA" onfocus="gray(this)">oprime</button>
+
+
+<p>Seleccionar un elemento y se cambia de color.</p>
+
+<script>
+function green(x) {
+  	x.style.background = "green";  
+}
+function yellow(x) {
+  	x.style.background = "yellow";  
+}
+function gray(x) {
+  	x.style.background = "gray";  
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<p id="ejemplo1"></p>
+<p id="ejemplo2"></p>
+<p id="ejemplo3"></p>
+<p id="ejemplo4"></p>
+<p id="ejemplo5"></p>
+<p id="ejemplo6"></p>
+<p id="ejemplo7"></p>
+<p id="ejemplo8"></p>
+<p id="ejemplo9"></p>
+<p id="ejemplo10"></p>
+<p id="ejemplo11"></p>
+<p id="ejemplo12"></p>
+<p id="ejemplo13"></p>
+<p id="ejemplo14"></p>
+<p id="ejemplo15"></p>
+<p id="ejemplo16"></p>
+<p id="ejemplo17"></p>
+<p id="ejemplo18"></p>
+<p id="ejemplo19"></p>
+
+<script type="text/javascript">
+	var arreglo = [1,2,3,4,5,4,6,7];
+	var arreglo1 = [77,95];
+
+    function mayor3(arreglo){
+    	return arreglo>3;
+    }  
+
+    function dividirarreglo(total,arreglo){
+    	return total / arreglo;
+    }   
+
+    
+    function menor50(arreglo){
+    	return arreglo < 50;
+    }  
+
+    function multiplicar5(x,arreglo){
+    	return x * 5;
+    }
+
+
+	document.getElementById('ejemplo1').innerHTML = 'Arreglo original: ' + arreglo;
+	arreglo.splice(7,2);
+	document.getElementById('ejemplo2').innerHTML = 'Eliminar elemento con el metodo splice en la posicion 7: ' + arreglo;
+	arreglo.splice(1,0,'37');
+	document.getElementById('ejemplo3').innerHTML = 'Añadir elemento con el metodo splice en la posicion 1: ' + arreglo;
+	document.getElementById('ejemplo4').innerHTML = 'Concatenar este arreglo con el metodo concat: ' + arreglo1 + ' con el metodo concat:' + arreglo.concat(arreglo1);
+	document.getElementById('ejemplo5').innerHTML = 'Mostrar elementos con el mètodo slice: ' + arreglo.slice(1,4);
+	document.getElementById('ejemplo6').innerHTML = 'Ordenar elementos alfabeticamente con el mètodo "sort": ' + arreglo.sort();
+	document.getElementById('ejemplo7').innerHTML = 'Revertir elementos alfabeticamente con el mètodo "reverse": ' + arreglo.reverse();
+	document.getElementById('ejemplo8').innerHTML = 'Sacar el maximo valor numerico con Math.max: ' + Math.max(1,2,3,4,5,4,6,37);
+	document.getElementById('ejemplo9').innerHTML = 'Sacar el mìnimo valor  numerico con Math.min: ' + Math.min(1,2,3,4,5,4,6,37);
+	document.getElementById('ejemplo10').innerHTML = 'Multiplicar cada elemento del arreglo por 5 con map: ' + arreglo.map(multiplicar5);
+	document.getElementById('ejemplo11').innerHTML = 'Llamar metodo mayor3 con filter: ' + arreglo.filter(mayor3);
+	document.getElementById('ejemplo12').innerHTML = 'Mostrar la division de cada elemento del arreglo de izquierda a derecha con reduce: ' + arreglo.reduce(dividirarreglo);
+	document.getElementById('ejemplo13').innerHTML ='Mostrar la division de cada elemento del arreglo de dercha a izquierda con "reduceRight": ' + arreglo.reduceRight(dividirarreglo);
+	document.getElementById('ejemplo14').innerHTML = 'Comprobar si todos los elementos del arreglo es menor a 50 con "every": ' + arreglo.every(menor50);
+	document.getElementById('ejemplo15').innerHTML = 'comprobar si algun elemento del arreglo es mayor a 3 con "some": ' + arreglo.some(mayor3);
+	document.getElementById('ejemplo16').innerHTML = 'mostrar la posicion del valor 3 con "indexOf": ' + arreglo.indexOf(3);
+	document.getElementById('ejemplo17').innerHTML = 'mostrar ultima posiciòn del valor 4 con lastIndexOf: ' + arreglo.lastIndexOf(4);
+	document.getElementById('ejemplo18').innerHTML = 'mostrar el primer valor del array mayor a 3 con "find": ' + arreglo.find(mayor3);
+	document.getElementById('ejemplo19').innerHTML = 'mostrar posicion del primer valor del array mayor a 3 con find: ' + arreglo.findIndex(mayor3);
+
+
+</script>
+</body>
+</html>

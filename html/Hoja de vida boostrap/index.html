@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoja de vida Boostrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+	
+.borde{
+	background-color: gray;
+	height:500px;
+}
+.borde1{
+background-color: red;
+}
+.borde2{
+	background-color: olivedrab;
+}
+.borde3{
+background-color: blue;
+}
+
+</style>
+
+</head>
+<body>
+<!-- EMPIEZA EL CONTENIDO -->
+
+<div class="container borde3 ">
+ <div class="row " >
+
+  <div class="col">
+<div>
+
+<div id="acordion">
+	<div class="card">
+	<div class="card-header">
+		<a href="#uno" class="card-link" data-toggle="collapse"   data-parent="#acordion">DATOS PERSONALES</a>
+</div>
+<div id="uno" class="collapse show" >
+	<div class="card-body">
+		<h3 class="text-center display-6">Datos personales</h3>
+		<img src="img/perfil.jpg" class="col-4" >
+<form action="proceso.php" method="POST">
+	<label for="nombre">Nombre</label><input type="text" id="nombre" class="form-control" >
+	<label for="apellido">Apellido</label><input type="text" id="apellido" class="form-control">
+	<label for="email">Email</label><input type="text" id="email" class="form-control" >
+	<label for="celular">Celular</label><input type="text" id="celular" class="form-control">
+	<label for="edad">Edad</label><input type="text" id="edad" class="form-control">
+	<br>
+	<label class="radio-inline"><input type="radio" name="sexo">Mujer</label>
+	<label class="radio-inline"><input type="radio" name="sexo">Hombre</label>
+	<br>
+	<br>
+	<input type="submit" value="GUARDAR" class="btn btn-danger">
+</form>
+
+	</div>
+</div>
+<div class="card-header">
+		<a href="#dos" class="card-link" data-toggle="collapse"   data-parent="#acordion">REFERENCIAS PERSONALES</a>
+</div>
+<div id="dos" class="collapse show" >
+	<div class="card-body">
+		<h3 class="text-center display-6">Referencia personal</h3>
+		<form action="proceso.php" method="POST">
+	<label for="nombre">Nombre completo</label><input type="text" id="nombre" class="form-control" >
+	<label for="Cedula">Cedula</label><input type="text" id="Cedula" class="form-control">
+	<label for="Parentesco">Parentesco</label><input type="text" id="Parentesco" class="form-control" >
+	<label for="Nombre">Nombre completo</label><input type="text" id="Nombre" class="form-control">
+	<label for="celular">Cedula</label><input type="text" id="celular" class="form-control">
+	
+	<br>
+	<br>
+	<input type="submit" value="GUARDAR" class="btn btn-danger">
+</form>
+
+	</div>
+</div>
+<div class="card-header">
+		<a href="#tres" class="card-link" data-toggle="collapse"   data-parent="#acordion">EXPERIENCIA LABORAL</a>
+</div>
+<div id="tres" class="collapse show" >
+	<div class="card-body">
+		<h3 class="text-center display-6">Experiencia laboral</h3>
+		<form action="proceso.php" method="POST">
+	<label for="nombre">Nombre de la empresa</label><input type="text" id="nombre" class="form-control" >
+	<label for="Cargo">Cargo</label><input type="text" id="Cargo" class="form-control">
+	<label for="Funciones">Funciones</label><input type="text" id="Funciones" class="form-control" >
+	<label for="Años">Años laborados</label><input type="text" id="años" class="form-control">
+	<label for="Telefono">Telefono de la empresa</label><input type="text" id="Telefono" class="form-control">
+	
+	<br>
+	<br>
+	<input type="submit" value="GUARDAR" class="btn btn-danger">
+</form>
+	</div>
+</div>
+<div class="card-header">
+		<a href="#cuatro" class="card-link" data-toggle="collapse"   data-parent="#acordion">PERFIL PROFESIONAL</a>
+</div>
+<div id="cuatro" class="collapse show" >
+	<div class="card-body">
+		<h3 class="text-center display-6">Perfil profesional</h3>
+		<textarea name="descripcion" id="uno" cols="120" rows="8"></textarea>
+<input type="submit" value="GUARDAR" class="btn btn-danger">
+	</div>
+</div>
+
+	</div>
+</div>
+
+	
+	<!-- ESTO ES UN MENU DESPLEGABLE
+	<div class="btn-group ">
+	<button type="button" class="btn btn-success "> Apple </button>
+	<button type="button" class="btn  btn-success "> samsung </button>
+
+	<div class="btn-group">
+		<button type="button" class=" btn btn-success dropdown-toggle" data-toggle="dropdown">sony</button>
+		<div class="dropdown-menu">
+<a href="#" class="dropdown-item">tablet</a>
+<a href="#" class="dropdown-item">smartphone</a>
+<a href="#" class="dropdown-item">computadora</a>
+		</div>
+	</div>
+	</div>
+
+<div class="progress" style="height: 50px;">
+	<div class="progress-bar w-75 bg-dark progress-bar-striped progress-bar-animated " >75%</div>
+
+</div>
+<p>Esto es un ejemplo de <span class="badge badge-pill badge-primary">Insignia</span></p>
+PAGINACION
+<ul class="pagination pagination-lg">
+	<li class="page-item"><a class="page-link" href="#">< previo</a></li>
+	<li class="page-item"><a class="page-link" href="#">1</a></li>
+	<li class="page-item"><a class="page-link" href="#">2</a></li>
+	<li class="page-item"><a class="page-link" href="#">3</a></li>
+	<li class="page-item"><a class="page-link" href="#">siguiente ></a></li>
+</ul> 
+FORMAS DE NAVEGACION PARA NO PERDERTE ENTRE PAGINAS
+ 
+<ul class="breadcrumb">
+	<li class="breadcrumb-item"><a href="#">home</a></li>
+	<li class="breadcrumb-item"><a href="#">Ftos</a></li>
+	<li class="breadcrumb-item"><a href="#">Verano 2018</a></li>
+	<li class="breadcrumb-item"><a href="#">Italia</a></li>
+	<li class="breadcrumb-item"><a href="#">Roma</a></li>
+</ul>
+ LISTAS
+
+<ul class="list-group">
+	<li class="list-group-item list-group-item-success">Lunes</li>
+	<li class="list-group-item  list-group-item-primary">Martes</li>
+	<li class="list-group-item  list-group-item-secondary">Miercoles</li>
+	<li class="list-group-item  list-group-item-warning">Jueves</li>
+	<li class="list-group-item  list-group-item-info">Viernes</li>
+</ul>
+
+LISTA FORMA 2
+
+<div class="list-group bg-dark">
+	<a href="#" class="list-group-item list-group-item-action">Primero</a>
+	<a href="#" class="list-group-item list-group-item-primary">Segundo</a>
+	<a href="#" class="list-group-item list-group-item-danger">Tercero</a>
+</div>
+TARGETAS DE INFORMACION
+-->
+
+</div>
+
+  </div>
+
+
+
+ </div>
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

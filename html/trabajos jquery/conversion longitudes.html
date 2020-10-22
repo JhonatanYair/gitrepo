@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conversion longitudes</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style type="text/css">
+	.lo{
+		background: #ACB4B4;
+
+	}
+</style>
+<body background="descarga.jpg">
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-sm-5"></div>
+			<div class="lo">
+
+				<div class="col-sm-3">
+				<center class="lo">
+					<div class="row">						
+						<div class="col-sm-1"></div>
+						<div class="col-sm-10">
+						<form name="formul" border="1" class="lo">
+	<label>ingrese el valor de la medida</label><br>
+	<input type="text" name="long" id="long" class="form-control">
+	<br>
+	<br>
+	<label>Tipo de longitudes iniciales</label><br>
+	<select name='conver1' id="conver1" class="form-control">
+	<option value="1">centímetros</option>
+	<option value="2">kilómetro</option>
+	<option value="3">Yarda</option>
+	<option value="4">metros</option>
+	</select>	
+	<br>
+	<br>
+	<label>Tipo de longitudes finales</label><br>
+	<select name='conver' id="conver" class="form-control">
+	<option value="1">centímetros</option>
+	<option value="2">kilómetro</option>
+	<option value="3">Yarda</option>
+	<option value="4">metros</option>
+	</select>	
+	<br>
+	<br>
+	<input type="text" name="resultado" id="resultado" class="form-control">
+	<br>
+	<br>
+	<input type="button" value="Conversion" id="con" class="btn btn-primary">
+	<br>
+	<br>
+	</form>		
+						</div>
+					</div>
+		
+		</center>
+			</div>
+			</div>
+			
+		</div>
+		
+	
+	</div>
+
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#con').click(function(){
+			conversionlongitudes();
+		});
+		
+	});
+</script>
+<script type="text/javascript">
+	
+	function conversionlongitudes(){
+
+	 longitud=$('#long').val();	
+	 opcion=$('#conver').val();	
+	 opcion1=$('#conver1').val();
+	 	 	 	
+	switch(parseInt(opcion1)){
+		case 1:
+		switch(parseInt(opcion)){
+		case 1:
+		alert('el resultado es el mismo');
+		break;
+		case 2:
+		resul=parseFloat(longitud)/100000;
+		$('#resultado').val(resul);
+		break;
+		case 3:
+		resul=parseFloat(longitud)/91.44;
+		$('#resultado').val(resul);
+		break;
+		case 4:
+		resul=parseFloat(longitud)/100;
+		$('#resultado').val(resul);
+		break;
+		}
+		break;
+		case 2:
+		switch(parseInt(opcion)){
+		case 1:
+		resul=parseFloat(longitud)*100000;
+		$('#resultado').val(resul);
+		break;
+		case 2:
+		alert('el resultado es el mismo')
+		break;
+		case 3:
+		resul=parseFloat(longitud)*1093.613;
+		$('#resultado').val(resul);
+		break;
+		case 4:
+		resul=parseFloat(longitud)*1000;
+		$('#resultado').val(resul);
+		break;
+		}
+		break;
+		case 3:
+		switch(parseInt(opcion)){
+		case 1:
+		resul=parseFloat(longitud)*91.44;
+		$('#resultado').val(resul);
+		break;
+		case 2:
+		resul=parseFloat(longitud)/1093.613;
+		$('#resultado').val(resul);
+		break;
+		case 3:
+		alert('el resultado es el mismo')
+		break;
+		case 4:
+		resul=parseFloat(longitud)/1.094;
+		$('#resultado').val(resul);
+		break;
+		}
+		break;
+		case 4:
+		switch(parseInt(opcion)){
+		case 1:
+		resul=parseFloat(longitud)*100;
+		$('#resultado').val(resul);
+		break;
+		case 2:
+		resul=parseFloat(longitud)/1000;
+		$('#resultado').val(resul);
+		break;
+		case 3:
+		resul=parseFloat(longitud)*1.094;
+		$('#resultado').val(resul);
+		break;
+		case 4:
+		alert('el resultado es el mismo')
+		break;
+		}
+		break;
+	}
+
+	}
+</script>
+
+

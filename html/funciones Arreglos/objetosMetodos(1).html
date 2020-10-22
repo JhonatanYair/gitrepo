@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<p id="mostrar1"></p>
+<p id="mostrar2"></p>
+<p id="mostrar3"></p>
+<p id="mostrar4"></p>
+<script type="text/javascript">
+var Operaciones = {
+  a: 12,
+  b: 6,
+  sumar: function() {
+    return this.a+this.b;
+  },
+  restar: function() {
+    return this.a-this.b;
+  },
+  multiplicar: function() {
+    return this.a*this.b;
+  },
+  dividir: function() {
+    return this.a/this.b;
+  },
+};
+
+document.getElementById("mostrar1").innerHTML="Suma:12 + 6= "+Operaciones.sumar();
+document.getElementById("mostrar2").innerHTML="Resta: 12 - 6= "+Operaciones.restar();
+document.getElementById("mostrar3").innerHTML="Multiplicacion: 12 X 6= "+Operaciones.multiplicar();
+document.getElementById("mostrar4").innerHTML="Division: 12 / 6= "+Operaciones.dividir();
+
+
+</script>
+</body>
+</html>

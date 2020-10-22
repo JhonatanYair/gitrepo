@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Ejemplo 1 de javascript</h1>
+
+	<p id=par1></p>
+<script type="text/javascript">
+	document.writeln('Hola mundo');
+	document.getElementById("par1").innerHTML = "texto de prueba";
+	var num1=10;
+	
+
+	document.writeln('<br>El valor de num1 es<br>'+num1);
+	var cadena='';
+	for (var i = 2 ; i <= 20; i+=2) {
+		cadena+=i+',';
+
+		
+	}
+	document.getElementById("par1").innerHTML = cadena;
+	
+
+</script>
+</body>
+</html>

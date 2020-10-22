@@ -1,0 +1,31 @@
+.divTable{
+display: table;	
+
+border:4px;
+}
+.divRow{
+display: table-row;
+width:auto;
+}
+.divCell{
+display: table-cell;
+padding: 3px 10px;
+}
+.divHead{
+display: table-header-group;
+font-weight: bold;
+}
+.divHeading{
+font-weight: bold;	
+display: table-cell;
+padding: 3px 10px;
+}
+.divTableBody {
+	display: table-row-group;
+}
+p{
+	background-color: #99C2E8;
+}
+li{
+	display: inline;
+}

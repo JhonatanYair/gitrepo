@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		function mostrarMensaje()
+		{
+
+     alert('Hola');
+
+
+		}
+		mostrarMensaje();
+
+		//Ejemplo funcion con parametros
+		function sumar(valor1,valor2){
+
+			return valor1 + valor2;
+
+		}
+
+		function sumar2(valor1,valor2){
+			var resultado=valor1 + valor2;
+
+			document.getElementById('demo').innerHTML=resultado;
+
+		}
+
+		//otra forma de usar funciones
+		var dato=sumar(10,2); 
+
+		document.getElementById('demo2').innerHTML=dato;
+
+
+	</script>
+
+
+	<button onclick="alert(sumar(10,5))">Sumar</button>
+
+	<button onclick="sumar2(20,15)">Suma 2</button>
+
+
+</body>
+</html>

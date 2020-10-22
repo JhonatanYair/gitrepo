@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversion de grados</title>
+	<script type="text/javascript">
+		function convertir(){
+			var grados=document.formul.cel.value;
+			var conversion;
+			var opcion=document.formul.conver.value;
+			if (grados!='') {
+				if(isNaN(grados)){
+
+				alert('debe ingresar un valor numérico');
+				return false;
+			}
+			else{
+			if (opcion==1) {
+				conversion=((grados*1)+273.15);
+				
+				var Resultado=document.formul.resul.value=conversion
+
+			}	
+			if (opcion==2) {
+				conversion=((grados*9/5)+32);
+				
+				var Resultado=document.formul.resul.value=conversion
+			}			
+				
+			} 
+				return false;
+			}
+			else{
+				alert('debe digitar un grado');
+				return false;
+			}
+
+
+		}
+
+
+
+	</script>
+
+</head>
+<body>
+	<form name="formul" method="post"onsubmit="return convertir();">
+
+	<label>Celcius</label><br>
+	<input type="text" name="cel">
+	<br>
+	<br>
+	<label>Tipo de grados</label><br>
+	<select name='conver'>
+	<option value="1">Kelvin</option>
+	<option value="2">fahrenheit</option>
+	</select>	
+	<br>
+	<br>
+	<input type="text" name="resul" id="resul">
+	<br>
+	<br>
+	<button type="submit">Convertir</button>
+	</form>
+</body>
+</html>

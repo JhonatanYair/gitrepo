@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de arreglos</title>
+</head>
+<body>
+	<p id="ejemplo"></p>
+	<p id="ejemplo2"></p>
+	<p id="ejemplo3"></p>
+	<p id="ejemplo4"></p>
+	<p id="ejemplo5"></p>
+	<p id="ejemplo7"></p>
+	<p id="ejemplo8"></p>
+	<p id="ejemplo9"></p>
+
+	<script type="text/javascript">
+		var numeros=[1,2,3]
+		var personas=["Juan","Pedro","Maria"]
+
+document.getElementById('ejemplo').innerHTML=personas;
+
+document.getElementById('ejemplo2').innerHTML= personas.toString();
+
+//Método para unir elementos del arreglo con el caracter que se indique
+document.getElementById('ejemplo3').innerHTML=personas.join("*");
+//Metodo para quitar ultimo elemento del arreglo
+document.getElementById('ejemplo4').innerHTML=personas.pop();
+
+//Metodo para  agregar elemento al arreglo
+document.getElementById('ejemplo5').innerHTML=personas.push("Johana");
+
+//Metodo de nuevo arreglo
+document.getElementById('ejemplo').innerHTML=personas;
+
+//para mostrar cantidad de elementos del arreglo
+document.getElementById('ejemplo7').innerHTML=personas+'.El arreglo tiene'+personas.length+'elementos';
+
+//para mostrar un determinado elemento(inicia igual que java o net desde cero)
+document.getElementById('ejemplo8').innerHTML=personas[0];//primer elemento
+document.getElementById('ejemplo9').innerHTML=personas[personas.length-1];//ultimo elemento
+
+
+
+	</script>
+
+</body>
+</html>

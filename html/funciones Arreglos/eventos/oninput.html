@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="input" oninput="mostrar()">
+	<p>Escribe algo para comenzar el experimento</p>:
+	<br>
+	<p id="mostrar"></p>
+	<script type="text/javascript">
+		function mostrar(){
+			var texto = document.getElementById("input").value;
+			document.getElementById('mostrar').innerHTML = "Escribe: " + texto;
+
+		}
+
+	</script>
+
+</body>
+</html>

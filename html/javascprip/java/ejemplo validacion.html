@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validacion</title>
+	<script type="text/javascript">
+	function validarIngreso(){
+		var usuario=document.miformulario.usuario.value;
+	var clave1=document.miformulario.clave.value;
+	var clave3=document.miformulario.clave2.value;
+
+	if (usuario=='') {
+
+		alert('debe ingresar el usuario');
+		return false;
+	}
+	else{
+
+
+		
+
+	if (clave1.length<=6) {
+		alert('la contraseña debe ser de al menos seis caracteres')
+		return false;
+	}
+	else{
+		if (clave1!=clave3) {
+			alert('las contraseña no coinciden');
+			return false;
+
+		}
+
+
+	}
+
+
+
+	
+	}
+}
+
+	</script>
+</head>
+<body>
+
+<form name="miformulario" method="post" action="bienvenida.html" onsubmit="return validarIngreso();">
+	<label>Usuario:</label><input type="txt" name="usuario">
+
+<br>
+<label>Clave:</label>
+<input type="password" name="clave">
+<label>Clave confirmar:</label>
+<input type="password" name="clave2">
+<br>
+<button type="submit">Ingresar</button>
+</form>
+</body>
+</html>

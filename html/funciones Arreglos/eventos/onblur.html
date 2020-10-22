@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Digite un número: <input type="text" id="fname" onblur="myFunction()">
+
+<p>Cuando se deja de hacer clic en la caja de texto, el numero ingresado se multiplica por 2.</p>
+
+<script>
+function myFunction() {
+  var num = document.getElementById("fname");
+  num.value = num.value*2;
+}
+</script>
+
+</body>
+</html>

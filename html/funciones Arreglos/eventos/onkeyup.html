@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Si ingresa un nùmero, este se convierte en su cuadrado: <input type="text" id="input" onkeyup="cuadrado()">
+
+<script>
+function cuadrado() {	
+  var num = document.getElementById("input");
+
+  num.value = num.value*num.value;
+}
+</script>
+
+</body>
+</html>

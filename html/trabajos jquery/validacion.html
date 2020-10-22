@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validaciones</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<form name="miformulario">
+<label>Usuario:</label><input type="txt" name="usuario" id="usuario">
+<br>
+<br>
+<label>Clave:</label>
+<input type="password" name="clave" id="password">
+<br>
+<br>
+<label>Clave confirmar:</label>
+<input type="password" name="clave2" id="password2">
+<br>
+<br>
+<label>Ingrese valor</label>
+<input type="text" name="valor" id="valor">
+<br>
+<br>
+<input type="submit" name="Validar" id="Validar">
+</form>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('#Validar').click(function(){
+
+		validar();
+	})	;
+
+	});
+
+</script>
+<script type="text/javascript">
+	function validar(){
+		var cont=0;
+	nombre=$('#usuario').val();	
+	password=$('#password').val();
+	password2=$('#password2').val();
+	valor=$('#valor').val();	
+
+	if (nombre==""&&password==""&&password2==""&&valor=="") {
+		alert('debes ingresar el nombre')
+		alert('debes ingresar la contraseña')
+		alert('debes ingresar la segunda contraseña')
+		alert('debes ingresar un valor')
+		$('#nombre').val("");
+		$('#password').val("");
+		$('#password2').val("");
+		$('#valor').val("");
+		cont++;
+	}
+	else{
+	if (nombre=="") {
+			alert('debes ingresar el nombre')
+			cont++;
+		}
+	if (password=="") {
+		alert('debes ingresar la contraseña')	
+		cont++;					
+	}
+	if (password2=="") {
+		alert('debes ingresar la segunda contraseña')
+		cont++;				
+	}
+
+	if (valor=="") {
+		alert('debes ingresar un valor')		
+		$('#valor').val("");
+		cont++;
+	}
+
+	if (password!=password2&&password!=""&&password2!="") {
+	alert('las contraseñas no coinciden')	
+		$('#password').val("");
+		$('#password2').val("");
+		cont++;
+	}
+
+	if (isNaN(valor)) {
+		alert('debes ingresar un valor numerico')
+		$('#valor').val("");
+		cont++;
+	}
+	if (password2.length<=4) {
+		alert('la contraseña debe ser de al menos seis caracteres')
+		$('#password').val("");
+		$('#password2').val("");
+		cont++;
+	}
+	if (cont==0) {
+		alert('bienvenido')
+	}
+	}
+	
+	}
+
+
+</script>

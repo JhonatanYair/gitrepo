@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Seleccione un nùmero de la lista.</p>
+
+<select id="select" onchange="myFunction()">
+  <option value=8>Factorial de 8</option>
+  <option value=9>Factorial de 9</option>
+  <option value=7>Factorial de 7</option>
+  <option value=2>Factorial de 2</option>
+</select>
+
+<p>Cuando se selecciona n numero del select, ese numero se le saca el factorial.</p>
+
+<p id="mostrar"></p>
+
+<script>
+function myFunction() {
+  var factorial =1;	
+  var num = document.getElementById("select").value;
+  for (var i = 1; i <=num ; i++) {
+		factorial*=i;
+		
+	}
+  document.getElementById("mostrar").innerHTML = "Factorial de " + num + " es: " + factorial;
+}
+</script>
+
+</body>
+</html>

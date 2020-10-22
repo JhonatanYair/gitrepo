@@ -1,0 +1,27 @@
+.tabla{
+	  	width: 20%;
+	  	display: grid;
+	  	grid-template-columns: auto  ;
+	  	padding: 30px;
+	  	
+	  }
+	  .border{
+border: 1px solid black;
+
+	  }
+
+	  .referencias{
+
+width: 50%;
+	  	display: grid;
+	  	grid-template-columns: auto auto auto auto  ;
+	  	padding: 30px;
+
+	  }
+	  .Contenido{
+	  	width: 15%;
+	  	background: red;
+	  	color: white;
+	  }
+
+	  
